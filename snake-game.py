@@ -23,7 +23,7 @@ def game():
     global case, picture
     dice = random.randint(1,6)
     case = case + dice
-    
+
     if case == 2:
         case = 37
         picture = str("./pictures/") + str(case) + str(".jpg")
