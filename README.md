@@ -1,8 +1,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  
 
 # Ladder Snake Game with Garfield
-
-![Screenshot](zombie.jpg)  
+  
 
 ## What's this game ?  
 
