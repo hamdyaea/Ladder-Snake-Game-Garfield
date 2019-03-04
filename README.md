@@ -1,4 +1,4 @@
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  
+![Awesome](awesome.svg)     ![Python](python.png)  
 
 # Ladder Snake Game with Garfield
   
