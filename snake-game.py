@@ -1,12 +1,24 @@
+#!/usr/bin/env python3
+#
 # Developer : Hamdy Abou El Anein
+# hamdy.aea@protonmail.com
+#
+#
 
 from easygui import *
 import random
 import sys
 
 
-dice = 0
-picture = " "
+class Garfield:
+    def __init__(self):
+        self.dice
+        self.picture
+        self.case
+
+
+Garfield.dice = 0
+Garfield.picture = " "
 
 
 def win():
@@ -19,16 +31,21 @@ def win():
     else:
         sys.exit(0)
 
+
 def game():
-    global case, picture
-    dice = random.randint(1,6)
-    case = case + dice
+    Garfield.dice = random.randint(1, 6)
+    Garfield.case = Garfield.case + Garfield.dice
 
-    if case == 2:
-        case = 37
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    if Garfield.case == 2:
+        Garfield.case = 37
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -36,11 +53,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 11:
-        case = 33
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 11:
+        Garfield.case = 33
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -48,11 +70,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 25:
-        case = 7
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 25:
+        Garfield.case = 7
+        Garfield.picture = str("./pictures/") + str(garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -60,11 +87,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 43:
-        case = 21
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 43:
+        Garfield.case = 21
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -72,11 +104,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 55:
-        case = 27
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 55:
+        Garfield.case = 27
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -84,11 +121,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 57:
-        case = 79
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 57:
+        Garfield.case = 79
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -96,11 +138,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 65:
-        case = 87
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 65:
+        Garfield.case = 87
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -108,11 +155,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 68:
-        case = 31
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 68:
+        Garfield.case = 31
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -120,11 +172,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 71:
-        case = 93
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 71:
+        Garfield.case = 93
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -132,11 +189,16 @@ def game():
         else:
             sys.exit(0)
 
-    elif case == 98:
-        case = 76
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+    elif Garfield.case == 98:
+        Garfield.case = 76
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -144,16 +206,20 @@ def game():
         else:
             sys.exit(0)
 
-
-    elif case == 100:
+    elif Garfield.case == 100:
         win()
 
     else:
-        if case > 100:
-            case = case - dice - (dice-1)
-        picture = str("./pictures/") + str(case) + str(".jpg")
-        image = picture
-        msg = "The result of the dice roll is " + str(dice) + str("\n\nyou are on the place ") + str(case)
+        if Garfield.case > 100:
+            Garfield.case = Garfield.case - Garfield.dice - (Garfield.dice - 1)
+        Garfield.picture = str("./pictures/") + str(Garfield.case) + str(".jpg")
+        image = Garfield.picture
+        msg = (
+            "The result of the dice roll is "
+            + str(Garfield.dice)
+            + str("\n\nyou are on the place ")
+            + str(Garfield.case)
+        )
         choices = ["Continue"]
         reply = buttonbox(msg, image=image, choices=choices)
         if reply == "Continue":
@@ -163,8 +229,7 @@ def game():
 
 
 def begin():
-    global case
-    case = 1
+    Garfield.case = 1
     image = "./pictures/1.jpg"
     msg = "Start the game"
     choices = ["Start"]
@@ -173,5 +238,6 @@ def begin():
         game()
     else:
         sys.exit(0)
+
 
 begin()
