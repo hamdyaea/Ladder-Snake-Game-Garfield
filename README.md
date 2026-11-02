@@ -1,38 +1,26 @@
-![Awesome](awesome.svg)     ![Python](python.png)  
+# Snakes and Ladders
 
-# Ladder Snake Game with Garfield
-  
+A lightweight single-player board game written in Python 3 with Tkinter.
 
-## What's this game ?  
+**Developer:** Hamdy Abou El Anein
+**Contact:** info@daylightlinux.ch
+**License:** GNU GPL v3 (see LICENSE).
 
-This is a ladder and snake game with Garfield in Python 3.
+## Features
 
-![Screenshot](screenshot.png)  
+- A drawn 100-square board, with snakes and ladders highlighted.
+- No EasyGUI dependency or external image assets.
+- Secure random die rolls, automatic jumps and end-of-game detection.
+- Unit tests for game rules and the real Tkinter interface.
 
+## Run
 
-## What you need to make it work :  
+    python3 snake-game.py
 
-The last version of Python 3.
+## Tests
 
-you also need to have the easygui library for python 3:
+    python3 -m unittest discover -s tests -v
 
-At least the version 0.98
-
-```sh
-sudo python3 -m pip install --upgrade easygui 
-```
-
-## How to launch this game :  
-
-```sh
-python3 snake-game.py
-```  
-
-
-## Developer - Author
-
-Hamdy Abou El Anein
-
-## Homepage
-
-http://www.daylightlinux.ch 
+The original Garfield-themed version is preserved on the
+[old branch](https://github.com/hamdyaea/Ladder-Snake-Game-Garfield/tree/old).
+The modern interface uses original vector-like drawing rather than bundled artwork.
