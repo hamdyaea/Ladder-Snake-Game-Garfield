@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Snakes and Ladders: a lightweight, single-player Tkinter game."""
 from __future__ import annotations
+from pathlib import Path
 
 import secrets
 import tkinter as tk
@@ -50,7 +51,9 @@ class Game(tk.Tk):
         size = self.CELL * 10
         self.board = tk.Canvas(panel, width=size, height=size, bg="#142337",
                                highlightthickness=0)
-        self.board.pack()
+        self.board.pack(side="left", padx=8)
+        self.scene = tk.Label(panel, bg="#101827")
+        self.scene.pack()
         tk.Label(panel, textvariable=self.message, bg="#101827", fg="#f2c879",
                  wraplength=460).pack(pady=12)
         controls = tk.Frame(panel, bg="#101827")
@@ -64,6 +67,10 @@ class Game(tk.Tk):
         self.draw()
 
     def draw(self) -> None:
+        scene = "garfieldwin" if self.position == 100 else str(self.position)
+        path = Path(__file__).resolve().parent / "pictures" / (scene + "-ui.png")
+        self.scene.image = tk.PhotoImage(file=str(path)) if path.is_file() else None
+        self.scene.configure(image=self.scene.image or "")
         self.board.delete("all")
         c = self.CELL
         for number in range(1, 101):
